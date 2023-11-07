@@ -1,5 +1,3 @@
-import java.util.regex.Matcher;
-
 public class DrivingLicence {
     private String name;
     private String surname;
