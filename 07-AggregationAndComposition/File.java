@@ -1,56 +1,17 @@
+package bin;
+
 public class File {
-    private int size;
-    private String content;
-    private String fileName;
-    private String address;
+    String name,address,content;
+    int size;
 
-    public File(int size, String content, String fileName, String address) {
-        this.size = size;
-        this.content = content;
-        this.fileName = fileName;
+    public File(String name, String address, String content, int size) {
+        this.name = name;
         this.address = address;
-    }
-
-    String open() {
-        return content;
-    }
-
-    void Rename(String name) {
-        this.fileName = name;
-    }
-
-    //setters and getters
-    
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
+        this.content = content;
         this.size = size;
     }
 
-    public String getContent() {
-        return content;
+    void displayContent() {
+        System.out.println(content);
     }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
 }
